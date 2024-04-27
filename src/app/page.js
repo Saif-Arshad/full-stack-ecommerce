@@ -1,10 +1,9 @@
+import Herosection from '@/Components/Hero/Hero'
 import React from 'react'
 
 function page() {
   return (
-    <div>
-      <h1>Helllo</h1>
-    </div>
+    <Herosection/>
   )
 }
 
