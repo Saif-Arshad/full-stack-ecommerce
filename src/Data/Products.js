@@ -32,5 +32,17 @@ export const Produts = [
 Elevate your style with our timeless Plain White Shirt. Crafted from high-quality cotton, it offers comfort and versatility for any occasion. Tailored fit, classic design, and durable stitching make it a wardrobe essential.`,
 
         },
+    {
+            "title" : "Denim jacket",
+            "image": denimjacket,
+            "discountprice": "69.00",
+            "actualprice": "89.00",
+            category:[ "unisex,jacket , denim"],
+            Tags: ["Modern,Design, Cotton"],
+            "description": `
+            
+Elevate your style with our timeless Plain White Shirt. Crafted from high-quality cotton, it offers comfort and versatility for any occasion. Tailored fit, classic design, and durable stitching make it a wardrobe essential.`,
+
+        },
     ]
 
