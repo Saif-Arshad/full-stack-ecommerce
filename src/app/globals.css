@@ -23,7 +23,7 @@
   justify-content: center;
   flex-wrap: wrap;
   @media screen and (max-width:500px) {
-      width: 98%;
+      width: 96%;
   }
 }
 .mainHero-About{
@@ -35,6 +35,23 @@
   align-items: end;
 }
 .mainHero-About h1{
+  color: white;
+  font-size: 45px;
+  font-weight: 400;
+  margin: 50px 20px;
+ @media screen and (max-width:400px) {
+    font-size: 30px;
+ }
+}
+.mainHero-Contact{
+  background-image: url(../../public/Assets/Images/Contact\ Hero/contacthero.jpg);
+  width: 100%;
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  align-items: end;
+}
+.mainHero-Contact h1{
   color: white;
   font-size: 45px;
   font-weight: 400;
