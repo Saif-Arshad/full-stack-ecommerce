@@ -35,12 +35,13 @@ function Support() {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        margin-top: 40px;
+        flex-direction: row;
         justify-content:center;
         padding:20px;
         .Main-Support{
             margin-left: 15px;
-        }
+            margin-top: 40px;
+        }   
         div{
             width: 250px;
             display: flex;
