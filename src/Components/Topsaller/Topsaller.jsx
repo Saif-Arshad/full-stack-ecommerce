@@ -27,7 +27,7 @@ function Topsaller() {
       </div>
         ))}
         </Card>
-<Mainbutton>
+<Mainbutton $BGColor="#024E82" $paddingTB="14px" $paddingLR="1px"  $TextSize="37px" >
   Shop now
 </Mainbutton>
 
