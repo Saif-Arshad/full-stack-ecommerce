@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const Card = styled.div`
     display: flex;
@@ -7,9 +7,6 @@ export const Card = styled.div`
     justify-content: center;
     margin-top: 15px;
     width: 100%;
-    /* @media screen  and (max-width: 500px) {
-        width: 98%;
-    } */
     div{
         display: flex;
         flex-direction: column;
@@ -22,7 +19,7 @@ export const Card = styled.div`
             object-fit: cover;
         }
         p{
-            font-weight: 450;
+            font-weight: 500;
             color:#024E82;
         }
     }

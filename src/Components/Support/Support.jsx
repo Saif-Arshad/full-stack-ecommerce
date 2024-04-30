@@ -40,8 +40,8 @@ function Support() {
         justify-content:center;
         padding:20px;
         .Main-Support{
+            margin: 20px 0;
             margin-left: 15px;
-            margin-top: 40px;
         }   
         div{
             width: 250px;

@@ -1,11 +1,37 @@
-import React from 'react'
+"use client"
 
+import React from 'react'
+import { Card } from '@/Styledcomponent/Card/Card.styled'
+import Image from 'next/image'
+import { useSelector } from 'react-redux'
+import { ProductCard } from '@/Styledcomponent/Productlayout/Productlayout.styled'
+import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
 function Topsaller() {
+  const data = useSelector((state)=>state.ecommerce.items)
+    const filteredData = data.filter(items=>items.sellers===true)
+
   return (
-    <div>
-        <h1>hi</h1>
-        <p>lorem1111</p>
-    </div>
+    <ProductCard>
+        <div className="top-heading">
+        <h1>Top Sellers</h1>
+        <h5>Browse our top-selling products</h5>
+      </div>
+      <Card>
+        {filteredData.map((product, index) => (
+      <div  key={index} className='Main-card'>
+            <Image src={product.image} alt={product.title} height={200}
+              width={250}
+            />
+            <h1>{product.title}</h1>
+            <p>{product.discountprice}$</p>
+      </div>
+        ))}
+        </Card>
+<Mainbutton>
+  Shop now
+</Mainbutton>
+
+        </ProductCard>
   )
 }
 
