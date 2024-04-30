@@ -9,6 +9,7 @@ border:${props => (props.$border ? props.$border  : "0" )} solid ${props => (pro
 width:${props => (props.$BtnWidth ? props.$BtnWidth  : "150px" )};
 font-size:${props => (props.$BtnFont ? props.$BtnFont  : "20px" )} ;
 margin-top:40px;
+border-radius: ${props => (props.$Borderradius ? props.$Borderradius  : "0px" )};
 font-weight:400;
 color:${props => (props.$TextColor ? props.$TextColor  : "white" )} ;
 background-color:${props => (props.$BGColor ? props.$BGColor  : "transparent" )} ;
