@@ -7,10 +7,11 @@ function Abouthero() {
     const ButNow = styled.section`
         display: flex;
         justify-content: space-evenly;
-        margin: 50px 0;
+        margin: 50px 0 ;
         flex-wrap: wrap;
         div{
             height: 500px;
+            margin-top: 30px;
             display: flex;
             justify-content: center;
             align-items: end;
