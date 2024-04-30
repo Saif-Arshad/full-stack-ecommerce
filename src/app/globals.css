@@ -12,3 +12,17 @@
   background-position: center;
   background-size: cover;
 } 
+.parent-hero{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-hero-page{
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (max-width:500px) {
+      width: 98%;
+  }
+}

@@ -6,10 +6,10 @@ export const Card = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 15px;
-    width: 95%;
-    @media screen  and (max-width: 500px) {
+    width: 100%;
+    /* @media screen  and (max-width: 500px) {
         width: 98%;
-    }
+    } */
     div{
         display: flex;
         flex-direction: column;
@@ -22,7 +22,7 @@ export const Card = styled.div`
             object-fit: cover;
         }
         p{
-            font-weight: 400;
+            font-weight: 450;
             color:#024E82;
         }
     }
