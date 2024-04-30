@@ -6,7 +6,10 @@ import denimjacket from '../../public/Assets/Images/Stoke/denim jacket.jpg'
 import outcast from '../../public/Assets/Images/Stoke/outcast t shirt.jpg'
 import plainwhite from '../../public/Assets/Images/Stoke/plain white shirt.jpg'
 import poloplain from '../../public/Assets/Images/Stoke/polo plain shirt.jpg'
-
+import graypolo from '../../public/Assets/Images/bestsale/gray polo shirt.png'
+import pinkcatual from '../../public/Assets/Images/bestsale/pink catual shirt.png'
+import polowhite from '../../public/Assets/Images/bestsale/polo wite shirt.png'
+import redshirt from '../../public/Assets/Images/bestsale/red shirt.png'
 
 export const Products = [
     {
@@ -102,6 +105,58 @@ The outcast shirt is a classic piece that exudes sophistication and versatility.
             "description": `
          
 The plain shirt is a classic piece that exudes sophistication and versatility. Its sleek design and timeless color make it a wardrobe staple for any occasion. Crafted from breathable fabric, it offers comfort and style in equal measure. The collared neck adds a touch of elegance, while the short sleeves provide a casual flair. Perfect for both formal events and casual outings, this black polo shirt effortlessly elevates any ensemble with its understated charm and refined appeal.`,
+
+        },
+    {
+            "title" : "Gray Polo shirt",
+            "image": graypolo,
+            "discountprice": "49.00",
+            "top-sellers":"true",
+            "actualprice": "79.00",
+            category:[ "Gray","Shirt", "poloshirt"],
+            Tags: ["Modern","Design", "Cotton"],
+            "description": `
+         
+The gray polo shirt is a classic piece that exudes sophistication and versatility. Its sleek design and timeless color make it a wardrobe staple for any occasion. Crafted from breathable fabric, it offers comfort and style in equal measure. The collared neck adds a touch of elegance, while the short sleeves provide a casual flair. Perfect for both formal events and casual outings, this black polo shirt effortlessly elevates any ensemble with its understated charm and refined appeal.`,
+
+        },
+    {
+            "title" : "Red shirt",
+            "image": redshirt,
+            "discountprice": "69.00",
+            "top-sellers":"true",
+            "actualprice": "79.00",
+            category:[ "Red","Shirt", "poloshirt"],
+            Tags: ["Modern","Design", "Cotton"],
+            "description": `
+         
+The Red polo shirt is a classic piece that exudes sophistication and versatility. Its sleek design and timeless color make it a wardrobe staple for any occasion. Crafted from breathable fabric, it offers comfort and style in equal measure. The collared neck adds a touch of elegance, while the short sleeves provide a casual flair. Perfect for both formal events and casual outings, this black polo shirt effortlessly elevates any ensemble with its understated charm and refined appeal.`,
+
+        },
+    {
+            "title" : "Polo white shirt",
+            "image": polowhite,
+            "discountprice": "29.00",
+            "top-sellers":"true",
+            "actualprice": "49.00",
+            category:[ "white","Shirt", "poloshirt"],
+            Tags: ["Modern","Design", "Cotton"],
+            "description": `
+         
+The white polo shirt is a classic piece that exudes sophistication and versatility. Its sleek design and timeless color make it a wardrobe staple for any occasion. Crafted from breathable fabric, it offers comfort and style in equal measure. The collared neck adds a touch of elegance, while the short sleeves provide a casual flair. Perfect for both formal events and casual outings, this black polo shirt effortlessly elevates any ensemble with its understated charm and refined appeal.`,
+
+        },
+    {
+            "title" : "Pink Casual shirt",
+            "image": pinkcatual,
+            "discountprice": "39.00",
+            "top-sellers":"true",
+            "actualprice": "49.00",
+            category:[ "pink","Shirt", "poloshirt"],
+            Tags: ["Modern","Design", "Cotton"],
+            "description": `
+         
+The pnik polo shirt is a classic piece that exudes sophistication and versatility. Its sleek design and timeless color make it a wardrobe staple for any occasion. Crafted from breathable fabric, it offers comfort and style in equal measure. The collared neck adds a touch of elegance, while the short sleeves provide a casual flair. Perfect for both formal events and casual outings, this black polo shirt effortlessly elevates any ensemble with its understated charm and refined appeal.`,
 
         },
   

@@ -1,42 +1,15 @@
 "use client"
 
-import React, { useState, useEffect } from 'react'
-import { Card } from '@/Styledcomponent/ProductCard/ProductCard.styled'
-import styled from 'styled-components'
-import { Products } from '@/Data/Products'
+import React from 'react'
+import { Card } from '@/Styledcomponent/Card/Card.styled'
 import Image from 'next/image'
+import { useSelector } from 'react-redux'
+import { ProductCard } from '@/Styledcomponent/Productlayout/Productlayout.styled'
 
-const ProductCard = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 
-  .top-heading {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    h1 {
-      font-size: 35px;
-      margin-top: 15px;
-      font-weight: 700;
-      @media screen and (max-width:450px) {
-        font-size: 25px;
-      }
-    }
-    h5 {
-      font-size: 18px;
-    }
-  }
-`
 
 function NewArrivals() {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    setData(Products); 
-  }, [])
-  console.log(data)
+  const data = useSelector((state)=>state.ecommerce.items)
   return (
     <ProductCard>
       <div className="top-heading">
@@ -44,7 +17,7 @@ function NewArrivals() {
         <h5>Recently added shirts</h5>
       </div>
           <Card>
-        {data.map((product, index) => (
+        {data.slice(0,8).map((product, index) => (
       <div  key={index} className='Main-card'>
             <Image src={product.image} alt={product.title} height={200}
               width={250}

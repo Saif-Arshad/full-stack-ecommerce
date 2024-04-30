@@ -3,7 +3,8 @@
 import React from 'react'
 import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
 
-import styled from "styled-components";
+import styled from '@emotion/styled'
+
 
 const HeroSection = styled.section`
     min-height: ${props => (props.$minH ? props.$minH : "90vh")};

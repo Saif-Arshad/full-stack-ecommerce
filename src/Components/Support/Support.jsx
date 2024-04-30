@@ -6,7 +6,8 @@ import Shipping from '../../../public/Assets/Icons/Home/free shipping.png'
 import Return from '../../../public/Assets/Icons/Home/days return.png'
 import Allday from '../../../public/Assets/Icons/Home/support.png'
 import Payment from '../../../public/Assets/Icons/Home/payment seure.svg'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
+
 function Support() {
     const supportData = [
         {
