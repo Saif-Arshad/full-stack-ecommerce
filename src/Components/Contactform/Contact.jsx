@@ -1,9 +1,11 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 // "use client"
 "use client"
 import React from 'react'
 import styled from '@emotion/styled'
 import Inputform from '../Form/Inputform'
-import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
+import { useSelector } from 'react-redux'
+import Sendmessage from '../Sendmessage/Sendmessage'
 
 const ContactFormStyle = styled.section`
 display: flex;
@@ -23,11 +25,12 @@ width: 100%;
     @media screen and (max-width:830px) {
       width: 100%;
     }
-    .form{
-      h1{
+    h1{
         font-size: 35px;
         font-weight: 600;
       }
+    .form{
+     
       p{
         font-size: 18px;
         width: 85%;
@@ -74,6 +77,10 @@ width: 100%;
       }
     }
 
+.inputError{
+  border: 2px solid red !important;
+}
+
   }
 
   .contact{
@@ -98,17 +105,19 @@ width: 100%;
 
 
 `
+   
 
 function ContactForm() {
+  const messageValue = useSelector((state)=>state.message.show)
+
   return (
     <ContactFormStyle>
       <div className="main-form">
-
+{
+  messageValue ? <Sendmessage/> :
       <Inputform/>
-        <Mainbutton $BtnWidth="180px" $btnFont="12px" $Borderradius="9px" $BGColor="#024E82" $paddingTB="10px" $paddingLR="5px">
-          Send message
-        </Mainbutton>
-      </div>
+     
+ }     </div>
     <div className="contact">
       <div>
       <h1>Visit Us</h1>
