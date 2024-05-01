@@ -1,8 +1,10 @@
 "use client"
 
-import React from 'react'
 import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
 import Link from 'next/link'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { React, useEffect } from 'react'
 import styled from '@emotion/styled'
 
 
@@ -43,13 +45,19 @@ const HeroSection = styled.section`
 `;
 
 function Herosection() {
+    useEffect(() => {
+        AOS.init({
+             duration: 800,
+             once: false,
+           })
+     }, [])
   return (
    <HeroSection $minH="90vh" className='main-Hero'>
     <div>
-     <h1>Stylist picks beat <br /> the heat  </h1>
+     <h1 data-aos="fade-right">Stylist picks beat <br /> the heat  </h1>
 
    <Link href={'/shop'}>
-     <Mainbutton $border="5px" $borderColor="white">
+     <Mainbutton data-aos="fade-down" $border="5px" $borderColor="white">
       Shop now
      </Mainbutton>
      </Link>  

@@ -31,7 +31,7 @@ function Abouthero() {
 
     <div className='mainHero-About'>
       
-    <h1>About Northstar</h1>
+    <h1 data-aos="fade-down">About Northstar</h1>
     </div>
     <ButNow>
        <div className="sub-About2">

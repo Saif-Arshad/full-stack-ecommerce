@@ -14,7 +14,7 @@ function NewArrivals() {
   return (
     <ProductCard>
       <div className="top-heading">
-        <h1>Discover NEW Arrivals</h1>
+        <h1 data-aos="fade-up-left">Discover NEW Arrivals</h1>
         <h5>Recently added shirts</h5>
       </div>
           <Card>

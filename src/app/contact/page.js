@@ -6,7 +6,7 @@ function page() {
     <>
     <div className='mainHero-Contact'>
       
-      <h1>Contact us</h1>
+      <h1  data-aos="fade-down">Contact us</h1>
       </div>
       <div className='parent-hero'>
     <div className='main-hero-page'>

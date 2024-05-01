@@ -14,7 +14,7 @@ function Topsaller() {
   return (
     <ProductCard>
         <div className="top-heading">
-        <h1>Top Sellers</h1>
+        <h1 data-aos="fade-up">Top Sellers</h1>
         <h5>Browse our top-selling products</h5>
       </div>
       <Card>
@@ -31,7 +31,7 @@ function Topsaller() {
         </Card>
    <Link href={'/shop'}>
 
-<Mainbutton $BGColor="#024E82" $paddingTB="14px" $paddingLR="1px"  $TextSize="37px" >
+<Mainbutton   $BGColor="#024E82" $paddingTB="14px" $paddingLR="1px"  $TextSize="37px" >
   Shop now
 </Mainbutton>
 </Link>

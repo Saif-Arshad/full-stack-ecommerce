@@ -31,7 +31,7 @@ function Inputform() {
   // console.log(Formik)
   return (
     <div className="form">
-        <h1>We would love to hear from you.</h1>
+        <h1 data-aos="fade-up">We would love to hear from you.</h1>
         <p>If you have any query or any type of suggestion, you can contact us here. We would love to hear from you.</p>
       
       <form  onSubmit={Formik.handleSubmit}>

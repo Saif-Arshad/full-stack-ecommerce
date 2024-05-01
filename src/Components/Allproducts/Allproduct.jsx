@@ -14,7 +14,7 @@ function Allproduct() {
   return (
     <ProductCard>
       <div className="top-heading">
-        <h1>Discover Best Products</h1>
+        <h1 data-aos="fade-up">Discover Best Products</h1>
         <h5>Recently added shirts</h5>
       </div>
           <Card className='mt-14'>

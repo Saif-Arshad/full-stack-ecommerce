@@ -66,7 +66,7 @@ padding: 36px 10px;
 function Getfree() {
   return (
     <Buyone>
-<div className='sub-one'>
+<div className='sub-one' data-aos="zoom-in-down">
         <h1>peace of mind</h1>
         <p>A one-stop platform for all your fashion needs, hassle-free. Buy with a peace of mind.</p>
    <Link href={'/shop'}>
@@ -76,7 +76,7 @@ function Getfree() {
             </Mainbutton>
 </Link>
      </div>
-     <div className='sub-two'>
+     <div className='sub-two' data-aos="zoom-in-down">
         <h1>Buy 2 Get 1 Free</h1>
         <p>End of season sale. Buy any 2 items of your choice and get 1 free.</p>
    <Link href={'/shop'}>

@@ -69,7 +69,7 @@ function Support() {
             }
     `
   return (
-    <Support>
+    <Support >
 
             {
                 supportData.map((item,index) => (
