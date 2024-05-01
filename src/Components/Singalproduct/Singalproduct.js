@@ -4,7 +4,8 @@ import styled from '@emotion/styled'
 import Image from 'next/image'
 import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
 import Dropdown from '../Dropdown/Dropdown'
-
+import { useDispatch } from 'react-redux'
+import { addToCart } from '@/Redux/feature/cartSlice'
 const SingalProduct= styled.section`
     display: flex;
     flex-direction: column;
@@ -15,6 +16,8 @@ const SingalProduct= styled.section`
         gap: 30px;
         @media screen and (max-width: 647px) {
                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
         }
         
         div:nth-of-type(1){
@@ -101,6 +104,12 @@ function Singalproduct(props) {
         const id = props.id
     const productData = useSelector((state)=>state.ecommerce.items)
     const filteredData = productData.filter((item)=> item.id === id)[0]
+    const dispatch = useDispatch()
+    const cartAdd = (item)=>{
+       dispatch(addToCart(item))
+    }
+
+
   return (
     <SingalProduct key={filteredData.id}>
         <div className='Main-product'>
@@ -130,7 +139,7 @@ function Singalproduct(props) {
 
 <Dropdown/>
 
-        <Mainbutton $BGColor="#024E82" $paddingTB="14px" $paddingLR="1px"  $TextSize="37px" >
+        <Mainbutton onClick={()=>cartAdd(filteredData)} $BGColor="#024E82" $paddingTB="14px" $paddingLR="1px"  $TextSize="37px" >
   Add to cart
 </Mainbutton>
 <div className='array-list'>
