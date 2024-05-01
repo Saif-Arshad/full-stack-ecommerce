@@ -49,7 +49,7 @@ function Inputform() {
                 <label htmlFor="email">Email</label>
                 <input onBlur={Formik.handleBlur} className={`${Formik.errors.email && Formik.touched.email? "inputError" : ""}`}  value={Formik.values.email} onChange={Formik.handleChange} type="email" name='email' placeholder='Write Your Email' />    
                 {Formik.errors.email && Formik.touched.email? <p className='text-red-500'> 
-                {Formik.errors.email=="Please enter a valid email"? "": "This Field is"} 
+                {Formik.errors.email=="Please enter a valid email"? "": "This Field is "} 
                 {Formik.errors.email}</p> : ""} 
 
         </div>

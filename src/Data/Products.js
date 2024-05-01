@@ -13,6 +13,7 @@ import redshirt from '../../public/Assets/Images/bestsale/red shirt.png'
 
 export const Products = [
     {
+            "id":"1",
             "title" : "plain white shirt",
             "image": plainwhite,
             "discountprice": "29.00",
@@ -24,6 +25,7 @@ export const Products = [
 
         },
     {
+            "id":"2",
             "title" : "Denim jacket",
             "image": denimjacket,
             "discountprice": "69.00",
@@ -36,6 +38,7 @@ Elevate your style with our timeless Plain White Shirt. Crafted from high-qualit
 
         },
     {
+            "id":"3",
             "title" : "Blue sweat shirt",
             "image": blueswaetshirt,
             "discountprice": "79.00",
@@ -48,6 +51,7 @@ The blue sweatshirt is a cozy wardrobe essential, crafted for comfort and style.
 
         },
     {
+        "id":"4",
             "title" : "Black polo shirt",
             "image": poloshirt,
             "discountprice": "49.00",
@@ -60,6 +64,7 @@ The black polo shirt is a classic piece that exudes sophistication and versatili
 
         },
     {
+        "id":"5",
             "title" : "Blue plain shirt",
             "image": blueshirt,
             "discountprice": "49.00",
@@ -72,6 +77,7 @@ The Blue polo shirt is a classic piece that exudes sophistication and versatilit
 
         },
     {
+        "id":"6",
             "title" : "Dark blue shirt",
             "image": darkblue,
             "discountprice": "89.00",
@@ -84,6 +90,8 @@ The dark Blue polo shirt is a classic piece that exudes sophistication and versa
 
         },
     {
+        "id":"7",
+
             "title" : "Outcast T shirt",
             "image": outcast,
             "discountprice": "19.00",
@@ -96,6 +104,8 @@ The outcast shirt is a classic piece that exudes sophistication and versatility.
 
         },
     {
+        "id":"8",
+
             "title" : "Polo plain shirt",
             "image": poloplain,
             "discountprice": "29.00",
@@ -108,6 +118,8 @@ The plain shirt is a classic piece that exudes sophistication and versatility. I
 
         },
     {
+        "id":"9",
+
             "title" : "Gray Polo shirt",
             "image": graypolo,
             "discountprice": "49.00",
@@ -121,6 +133,8 @@ The gray polo shirt is a classic piece that exudes sophistication and versatilit
 
         },
     {
+        "id":"10",
+
             "title" : "Red shirt",
             "image": redshirt,
             "discountprice": "69.00",
@@ -134,6 +148,8 @@ The Red polo shirt is a classic piece that exudes sophistication and versatility
 
         },
     {
+        "id":"11",
+
             "title" : "Polo white shirt",
             "image": polowhite,
             "discountprice": "29.00",
@@ -147,6 +163,8 @@ The white polo shirt is a classic piece that exudes sophistication and versatili
 
         },
     {
+        "id":"12",
+
             "title" : "Pink Casual shirt",
             "image": pinkcatual,
             "discountprice": "39.00",

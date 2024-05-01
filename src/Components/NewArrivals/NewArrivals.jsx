@@ -3,6 +3,7 @@
 import React from 'react'
 import { Card } from '@/Styledcomponent/Card/Card.styled'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useSelector } from 'react-redux'
 import { ProductCard } from '@/Styledcomponent/Productlayout/Productlayout.styled'
 
@@ -19,9 +20,10 @@ function NewArrivals() {
           <Card>
         {data.slice(0,8).map((product, index) => (
       <div  key={index} className='Main-card'>
-            <Image src={product.image} alt={product.title} height={200}
+       <Link href={`/product/${product.id}`}>    <Image src={product.image} alt={product.title} height={200}
               width={250}
             />
+            </Link> 
             <h1>{product.title}</h1>
             <p>{product.discountprice}$</p>
       </div>

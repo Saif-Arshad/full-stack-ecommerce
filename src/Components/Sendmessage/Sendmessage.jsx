@@ -16,7 +16,7 @@ function Sendmessage() {
 
   return (
     <div>
-      <h1>Message Send we will contact you soon </h1>
+      <h1>Message Send Sucessfully we will contact you soon </h1>
       <Link href={"/"}>
     <Mainbutton onClick={setFalseContact} type='submit' $BtnWidth="180px" $btnFont="12px" $Borderradius="9px" $BGColor="#024E82" $paddingTB="10px" $paddingLR="5px">
     Go Back to Home
