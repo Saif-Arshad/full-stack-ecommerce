@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import styled from '@emotion/styled'
+import Link from 'next/link'
 import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
 function Abouthero() {
 
@@ -34,14 +35,21 @@ function Abouthero() {
     </div>
     <ButNow>
        <div className="sub-About2">
+   <Link href={'/shop'}>
+          
             <Mainbutton $TextSize="12px"  $BGColor="white" $BtnWidth="130px" $paddingTB="8px" $Borderradius="20px" $paddingLR="18px" $TextColor="#14517B" >
                 buy now
             </Mainbutton>
+        </Link>
+
        </div>
        <div className="sub-About1" >
+   <Link href={'/shop'}>
+      
         <Mainbutton $TextSize="12px" $BGColor="white" $BtnWidth="130px" $paddingTB="8px" $Borderradius="20px" $paddingLR="18px"  $TextColor="#14517B" >
             buy now
         </Mainbutton>
+        </Link>
        </div>
     </ButNow>
     </>

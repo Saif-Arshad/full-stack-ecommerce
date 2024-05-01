@@ -1,6 +1,6 @@
 import Image from "next/image";
 import paymentImg from "../../../public/payments.png";
-
+import Link from "next/link";
 const Footer = () => {
   return (
       <footer className="w-full bg-[#FBFBFB] text-black py-12  mt-14">
@@ -10,24 +10,26 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-black">Company Info</h4>
             <ul className="space-y-2">
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/about">
                   About us
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
-                  Latest Posts
-                </a>
+                <Link className="hover:text-gray-500 transition-colors" href="/cart">
+                  MyCart
+                </Link>
               </li>
+
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/contact">
                   Contact us
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/shop">
                   Shop
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -35,29 +37,29 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-black">Help Links</h4>
             <ul className="space-y-2">
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
-                  Tracking
-                </a>
+                <Link className="hover:text-gray-500 transition-colors" href="/billing">
+                  Billing
+                </Link>
               </li>
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/cart">
                   Order Status
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/cart">
                   Delivery
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/cart">
                   Shipping Info
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/about">
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -66,29 +68,29 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-black">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/shop">
                   Useful Links
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/">
                   Special Offer
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/about">
                   Gift Cards
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/shop">
                   Advertising
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-gray-500 transition-colors" href="#">
+                <Link className="hover:text-gray-500 transition-colors" href="/about">
                   Terms of Use
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -111,15 +113,15 @@ const Footer = () => {
             <div className="text-sm">© 2024 NorthStar eCommerce.</div>
             <br />
             <div>
-              <a className="hover:text-gray-500 transition-colors" href="#">
+              <Link className="hover:text-gray-500 transition-colors" href="/about">
                 Privacy Policy
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <a className="hover:text-gray-500 transition-colors" href="#">
+            <Link className="hover:text-gray-500 transition-colors" href="#">
               <Image src={paymentImg} height={"200"} width={"200"} className="object-cover" alt="Payment" />
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

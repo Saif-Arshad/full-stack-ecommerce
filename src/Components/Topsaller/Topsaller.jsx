@@ -29,10 +29,12 @@ function Topsaller() {
       </div>
         ))}
         </Card>
+   <Link href={'/shop'}>
+
 <Mainbutton $BGColor="#024E82" $paddingTB="14px" $paddingLR="1px"  $TextSize="37px" >
   Shop now
 </Mainbutton>
-
+</Link>
         </ProductCard>
   )
 }

@@ -3,7 +3,7 @@
 import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
 import styled from '@emotion/styled'
 import React from 'react'
-
+import Link from 'next/link'
 
 const Buyone = styled.section`
 width: 100;
@@ -69,18 +69,22 @@ function Getfree() {
 <div className='sub-one'>
         <h1>peace of mind</h1>
         <p>A one-stop platform for all your fashion needs, hassle-free. Buy with a peace of mind.</p>
+   <Link href={'/shop'}>
+    
         <Mainbutton $BGColor="white" $TextColor="blue" $BtnFont="17px" $BtnWidth="120px" $paddingTB="7px" $paddingLR="10px" >
             Buy Now
             </Mainbutton>
-
+</Link>
      </div>
      <div className='sub-two'>
         <h1>Buy 2 Get 1 Free</h1>
         <p>End of season sale. Buy any 2 items of your choice and get 1 free.</p>
+   <Link href={'/shop'}>
+      
         <Mainbutton $BGColor="white" $TextColor="blue" $BtnFont="17px" $BtnWidth="120px"  $paddingTB="7px" $paddingLR="10px" >
             Buy Now
         </Mainbutton>
-
+</Link>
      </div>
      </Buyone>
 

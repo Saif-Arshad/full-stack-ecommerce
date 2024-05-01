@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
-
+import Link from 'next/link'
 import styled from '@emotion/styled'
 
 
@@ -47,10 +47,12 @@ function Herosection() {
    <HeroSection $minH="90vh" className='main-Hero'>
     <div>
      <h1>Stylist picks beat <br /> the heat  </h1>
-     
+
+   <Link href={'/shop'}>
      <Mainbutton $border="5px" $borderColor="white">
       Shop now
      </Mainbutton>
+     </Link>  
      </div>
    </HeroSection>
   )

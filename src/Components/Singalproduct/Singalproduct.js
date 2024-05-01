@@ -42,6 +42,9 @@ const SingalProduct= styled.section`
           h1{
             font-size: 42px;
             font-weight: 600;
+            @media screen  and (max-width:500px){
+                font-size: 32px;
+            }
             text-transform: capitalize;
           } 
           .price {
@@ -141,7 +144,7 @@ function Singalproduct(props) {
 
 <Dropdown/>
 
-        <Mainbutton onClick={()=>cartAdd(filteredData)} $BGColor="#024E82" $paddingTB="14px" $paddingLR="1px"  $TextSize="37px" >
+        <Mainbutton onClick={()=>cartAdd(filteredData)} $BGColor="#024E82" $paddingTB="10px" $paddingLR="1px"  $TextSize="37px" >
   Add to cart
 </Mainbutton>
 <div className='array-list'>
