@@ -4,9 +4,10 @@ import React from 'react'
 import Cartitem from '../Cartitem/Cartitem'
 import { useSelector } from 'react-redux'
 import styled from '@emotion/styled'
+import Link from 'next/link'
 import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
 
-const CartPriceTotal = styled.div `
+export const CartPriceTotal = styled.div `
 
 width: 100%;
 margin-top: 50px;
@@ -75,9 +76,11 @@ function CartTotal() {
    <span> Total  </span>
    <span> ${Total}</span>
 </p>
+<Link href='/billing'>
 <Mainbutton $BtnWidth="230px" $paddingTB="15px" $BtnFont="18px" $BGColor="#D6763C">
 Proceed to Checkout
 </Mainbutton>
+</Link>
 
       </div>
   
