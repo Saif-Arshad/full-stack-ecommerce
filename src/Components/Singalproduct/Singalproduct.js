@@ -6,6 +6,7 @@ import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
 import Dropdown from '../Dropdown/Dropdown'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '@/Redux/feature/cartSlice'
+import toast from 'react-hot-toast'
 const SingalProduct= styled.section`
     display: flex;
     flex-direction: column;
@@ -107,6 +108,7 @@ function Singalproduct(props) {
     const dispatch = useDispatch()
     const cartAdd = (item)=>{
        dispatch(addToCart(item))
+       toast.success(`${item.title} added to cart`)
     }
 
 

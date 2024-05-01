@@ -16,8 +16,8 @@ export const Products = [
             "id":"1",
             "title" : "plain white shirt",
             "image": plainwhite,
-            "discountprice": "29.00",
-            "actualprice": "59.00",
+            "discountprice":29.00,
+            "actualprice": 59.00,
             category:[ "men","t shirt "," plain shirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -28,8 +28,8 @@ export const Products = [
             "id":"2",
             "title" : "Denim jacket",
             "image": denimjacket,
-            "discountprice": "69.00",
-            "actualprice": "89.00",
+            "discountprice":69.00,
+            "actualprice": 89.00,
             category:[ "unisex","jacket" , "denim"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -41,8 +41,8 @@ Elevate your style with our timeless Plain White Shirt. Crafted from high-qualit
             "id":"3",
             "title" : "Blue sweat shirt",
             "image": blueswaetshirt,
-            "discountprice": "79.00",
-            "actualprice": "109.00",
+            "discountprice":79.00,
+            "actualprice": 109.00,
             category:[ "unisex","Shirt", "Sweatshirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -54,8 +54,8 @@ The blue sweatshirt is a cozy wardrobe essential, crafted for comfort and style.
         "id":"4",
             "title" : "Black polo shirt",
             "image": poloshirt,
-            "discountprice": "49.00",
-            "actualprice": "89.00",
+            "discountprice":49.00,
+            "actualprice": 89.00,
             category:[ "Black","Shirt", "poloshirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -67,8 +67,8 @@ The black polo shirt is a classic piece that exudes sophistication and versatili
         "id":"5",
             "title" : "Blue plain shirt",
             "image": blueshirt,
-            "discountprice": "49.00",
-            "actualprice": "89.00",
+            "discountprice":49.00,
+            "actualprice": 89.00,
             category:[ "Blue","Shirt", "poloshirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -80,8 +80,8 @@ The Blue polo shirt is a classic piece that exudes sophistication and versatilit
         "id":"6",
             "title" : "Dark blue shirt",
             "image": darkblue,
-            "discountprice": "89.00",
-            "actualprice": "189.00",
+            "discountprice":89.00,
+            "actualprice": 189.00,
             category:[ "Dark blue","Shirt", "poloshirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -94,8 +94,8 @@ The dark Blue polo shirt is a classic piece that exudes sophistication and versa
 
             "title" : "Outcast T shirt",
             "image": outcast,
-            "discountprice": "19.00",
-            "actualprice": "49.00",
+            "discountprice":19.00,
+            "actualprice": 49.00,
             category:[ "outcast","Shirt", "poloshirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -108,8 +108,8 @@ The outcast shirt is a classic piece that exudes sophistication and versatility.
 
             "title" : "Polo plain shirt",
             "image": poloplain,
-            "discountprice": "29.00",
-            "actualprice": "49.00",
+            "discountprice":29.00,
+            "actualprice": 49.00,
             category:[ "plain polo","Shirt", "poloshirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -122,9 +122,9 @@ The plain shirt is a classic piece that exudes sophistication and versatility. I
 
             "title" : "Gray Polo shirt",
             "image": graypolo,
-            "discountprice": "49.00",
+            "discountprice":49.00,
             "sellers":true,
-            "actualprice": "79.00",
+            "actualprice": 79.00,
             category:[ "Gray","Shirt", "poloshirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -137,9 +137,9 @@ The gray polo shirt is a classic piece that exudes sophistication and versatilit
 
             "title" : "Red shirt",
             "image": redshirt,
-            "discountprice": "69.00",
+            "discountprice":69.00,
             "sellers":true,
-            "actualprice": "79.00",
+            "actualprice": 79.00,
             category:[ "Red","Shirt", "poloshirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -152,9 +152,9 @@ The Red polo shirt is a classic piece that exudes sophistication and versatility
 
             "title" : "Polo white shirt",
             "image": polowhite,
-            "discountprice": "29.00",
+            "discountprice":29.00,
             "sellers":true,
-            "actualprice": "49.00",
+            "actualprice": 49.00,
             category:[ "white","Shirt", "poloshirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
@@ -167,9 +167,9 @@ The white polo shirt is a classic piece that exudes sophistication and versatili
 
             "title" : "Pink Casual shirt",
             "image": pinkcatual,
-            "discountprice": "39.00",
+            "discountprice":39.00,
             "sellers":true,
-            "actualprice": "49.00",
+            "actualprice": 49.00,
             category:[ "pink","Shirt", "poloshirt"],
             Tags: ["Modern","Design", "Cotton"],
             "description": `
