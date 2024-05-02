@@ -8,6 +8,7 @@ import Cartimage from '../../../public/Assets/Icons/shopping-bag 1.svg'
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
+import { routeUrl } from '@/utils/Route/Route';
 
 function Carticon() {
   const cartItmes = useSelector((state)=>state.ecommerce.cart)
@@ -18,7 +19,7 @@ function Carticon() {
         <Badge color="primary" badgeContent=
         {length}
         >
-   <Link href={'/cart'}>
+   <Link href={routeUrl.cart}>
       <IconButton>
         <Image
         src={Cartimage }

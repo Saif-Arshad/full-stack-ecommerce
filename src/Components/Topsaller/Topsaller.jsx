@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { useSelector } from 'react-redux'
 import { ProductCard } from '@/Styledcomponent/Productlayout/Productlayout.styled'
 import { Mainbutton } from '@/Styledcomponent/Button/Button.styled'
+import { routeUrl } from '@/utils/Route/Route'
 function Topsaller() {
   const data = useSelector((state)=>state.ecommerce.items)
     const filteredData = data.filter(items=>items.sellers===true)
@@ -29,7 +30,7 @@ function Topsaller() {
       </div>
         ))}
         </Card>
-   <Link href={'/shop'}>
+   <Link href={routeUrl.shop}>
 
 <Mainbutton   $BGColor="#024E82" $paddingTB="14px" $paddingLR="1px"  $TextSize="37px" >
   Shop now

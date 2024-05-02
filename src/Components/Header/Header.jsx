@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Carticon from './Carticon';
 import Accounticon from './Accounticon';
+import { routeUrl } from '@/utils/Route/Route';
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ function Nav() {
     <div>
       <nav className="bg-white border-gray-200 py-3.5">
         <div className="flex flex-wrap items-center flex-col sm:flex-row sm:justify-between justify-center max-w-screen-xl px-4 mx-auto">
-          <Link href="/" >
+          <Link href={routeUrl.home} >
           <span className="self-center flex items-center text-2xl font-semibold drop-shadow-sm whitespace-nowrap text-black">
               NorthStar
             </span>
@@ -69,15 +70,15 @@ function Nav() {
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
             
               <li>
-                    <Link href="/"
+                    <Link href={routeUrl.home}
                         className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-500 lg:p-0">Home</Link>
                 </li>
               <li>
-                    <Link href="/about"
+                    <Link href={routeUrl.about}
                         className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-500 lg:p-0 ">About</Link>
                 </li>
                 <li>
-                    <Link href="/contact"
+                    <Link href={routeUrl.contact}
                         className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-500 lg:p-0 ">Contact Us</Link>
                 </li>
             </ul>
