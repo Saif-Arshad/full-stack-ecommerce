@@ -52,7 +52,7 @@ function Herosection() {
            })
      }, [])
   return (
-   <HeroSection $minH="90vh" className='main-Hero'>
+   <HeroSection $minH="90vh" className='main-Hero min-w-screen overflow-x-hidden'>
     <div>
      <h1 data-aos="fade-right">Stylist picks beat <br /> the heat  </h1>
 
