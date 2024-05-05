@@ -120,6 +120,7 @@ function Singalproduct(props) {
         <div className='Main-product'>
         <div>
 <Image
+     data-aos="zoom-in"
     src={filteredData.image.src}
     alt={filteredData.title}
     width={400}
